@@ -15,6 +15,7 @@ from AllGrades import *
 root = Tk()
 #root.geometry('350x400')
 root.title('Mr Mahmoud Ali Program')
+root.resizable(False, False)
 
 # for Primary School Students
 firstGradeObject = Grade('firstGrade', 'First Grade Main Window', 'First Grade Edit Window', 'First Grade Create New Student Window', 'First Grade Show All Records Window')
