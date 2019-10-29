@@ -49,6 +49,7 @@ class Grade:
         root = Tk()
         root.geometry('330x300')
         root.title(self.windowTitle)
+        root.resizable(False, False)
 
         # Connect to database
         connect = sql.connect('StudyClass.db')
@@ -86,7 +87,8 @@ class Grade:
         secondary = Tk()
         secondary.geometry('450x400')
         secondary.title(self.createWindowTitle)
-
+        secondary.resizable(False, False)
+        
         # declare all the elements of the window
         self.studentName = Entry(secondary)
         self.age = Entry(secondary)
@@ -168,8 +170,9 @@ class Grade:
     def show(self):
         # create the window secondary
         secondary = Tk()
-        # secondary.geometry('800x400')
+        
         secondary.title(self.showWindowTitle)
+        secondary.resizable(False, False)
 
         # Connect to database
         connect = sql.connect('StudyClass.db')
@@ -252,6 +255,7 @@ class Grade:
             secondary = Tk()
             secondary.geometry('450x400')
             secondary.title(self.editWindowTitle)
+            secondary.resizable(False, False)
 
             # Connect to database
             connect = sql.connect('StudyClass.db')
